@@ -27,3 +27,4 @@
 2024-05-20 22:39:35,680 - SqliteDB[WARNING]Table user_scheme does not match the schema defined in gc.default_headers.
 2024-05-20 22:39:59,480 - SqliteDB[WARNING]Table user_data does not match the schema defined in gc.default_headers.
 2024-05-20 22:40:02,991 - SqliteDB[INFO]Database C:\Users\AkDNi\Desktop\pack\PythonProject\re_maa\resource\data\data.db created with default tables.
+2024-05-20 23:03:56,277 - SqliteDB[INFO]Database C:\Users\AkDNi\Desktop\pack\PythonProject\re_maa\resource\data\data.db created with default tables.
