@@ -4,34 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eccd276-838c-4647-b75a-16916cf5ccec" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/re_maa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/emulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/updater.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funclib/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/re_maa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="2eccd276-838c-4647-b75a-16916cf5ccec" name="更改" comment="CREATE:项目建立">
       <change afterPath="$PROJECT_DIR$/resource/data/data.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/logs/MaaCore.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/logs/ReMaa.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/logs/SqliteDB.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/logs/Updater.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/temp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/aria2c.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/task_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +25,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.re_maa.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.re_maa.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,9 +49,22 @@
       <option name="presentableId" value="Default" />
       <updated>1716199917783</updated>
       <workItem from="1716199918549" duration="2900000" />
-      <workItem from="1716203581567" duration="161000" />
+      <workItem from="1716203581567" duration="1555000" />
     </task>
+    <task id="LOCAL-00001" summary="CREATE:项目建立">
+      <option name="closed" value="true" />
+      <created>1716203850459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716203850459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CREATE:项目建立" />
+    <option name="LAST_COMMIT_MESSAGE" value="CREATE:项目建立" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/re_maa$re_maa.coverage" NAME="re_maa 覆盖结果" MODIFIED="1716200886815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
