@@ -7,7 +7,7 @@ import uuid
 from colorama import Fore, Style
 from prettytable import PrettyTable
 
-from .stack import GlobalConst as gc
+from funclib.stack import GlobalConst as gc
 
 import psutil
 

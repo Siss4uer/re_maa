@@ -17,3 +17,13 @@
 2024-05-20 11:17:58,914 - SqliteDB[INFO]Data »¨¿ª±Ë°¶ÉúµÄÐ¡ºÅ updated in user_data, last_run set to marked, last_run_time set to 2024-05-20 11:17:58
 2024-05-20 11:25:21,610 - SqliteDB[INFO]Data ZephyR updated in user_data, last_run set to marked, last_run_time set to 2024-05-20 11:25:21
 2024-05-20 11:42:01,881 - SqliteDB[INFO]Data Á§Ô§Ô§Ô§Ô§ updated in user_data, last_run set to marked, last_run_time set to 2024-05-20 11:42:01
+2024-05-20 21:44:12,805 - SqliteDB[WARNING]Error: no such column: Syntax
+2024-05-20 22:29:32,729 - SqliteDB[WARNING]Table user_scheme does not match the schema defined in gc.database_header.
+2024-05-20 22:29:41,075 - SqliteDB[WARNING]Error: no such column: Syntax
+2024-05-20 22:33:42,982 - SqliteDB[WARNING]Table user_scheme does not match the schema defined in gc.database_header.
+2024-05-20 22:33:47,664 - SqliteDB[WARNING]Error: no such column: Syntax
+2024-05-20 22:36:00,159 - SqliteDB[WARNING]Table user_scheme does not match the schema defined in gc.database_header.
+2024-05-20 22:36:04,148 - SqliteDB[WARNING]Error: no such column: Syntax
+2024-05-20 22:39:35,680 - SqliteDB[WARNING]Table user_scheme does not match the schema defined in gc.default_headers.
+2024-05-20 22:39:59,480 - SqliteDB[WARNING]Table user_data does not match the schema defined in gc.default_headers.
+2024-05-20 22:40:02,991 - SqliteDB[INFO]Database C:\Users\AkDNi\Desktop\pack\PythonProject\re_maa\resource\data\data.db created with default tables.

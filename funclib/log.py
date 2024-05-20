@@ -1,6 +1,6 @@
 import logging
 from colorama import Fore, Style
-from .stack import GlobalConst as gc
+from funclib.stack import GlobalConst as gc
 
 
 class ColoredFormatter(logging.Formatter):

@@ -1,7 +1,10 @@
 import hashlib
 import os
+import pathlib
 
-from .utils import Version, InstanceOptionType
+import path
+
+from funclib.utils import Version, InstanceOptionType
 
 
 class GlobalConst:
@@ -93,7 +96,7 @@ class GlobalConst:
 	# RE_MAA设置
 	project_path = os.getcwd()
 	LOG_PATH = project_path + "\\resource\\logs\\"
-	MAA_RES_PATH = project_path + "\\resource\\maa_res\\"  # MAACore.dll路径
+	MAA_RES_PATH = os.path.dirname(project_path) + "/maa_res"  # MAACore.dll路径
 	EMULATOR = ["C:\Program Files\BlueStacks_nxt\HD-Player.exe", 20]  # 模拟器路径
 	ADB_PATH = ["C:\Program Files\BlueStacks_nxt\HD-Adb.exe", "127.0.0.1:5555"]  # ADB路径
 	Database_Path = project_path + "\\resource\\data\\data.db"

@@ -179,10 +179,8 @@ def __init(Core=True, Emulator=False, Adb=False, DB=True):
 if __name__ == "__main__":
 	# 初始化
 	Asst, is_EMULATOR, is_adb, db_handler = __init(Emulator=True, Core=True, Adb=True, DB=True)
-
 	tools.print_table(db_handler.retrieve_data(), log)
 	user_list = db_handler.retrieve_data()
-	input('按任意键继续')
 	for user in user_list:
 		if user['status'] == "disabled":  # 跳过禁用用户
 			continue

@@ -2,8 +2,8 @@ import datetime
 import os
 import sqlite3
 from sqlite3 import Error
-from .stack import GlobalConst as gc
-from .log import logger
+from funclib.stack import GlobalConst as gc
+from funclib.log import logger
 
 """
 数据库操作类
@@ -21,10 +21,6 @@ functions:
 
 class SqliteDB:
 	def __init__(self, db_file=None):
-		"""
-		初始化数据库链接
-		:param db_file:
-		"""
 		if db_file is None:
 			db_file = gc.Database_Path
 		self.__db_file = db_file
@@ -35,9 +31,11 @@ class SqliteDB:
 				conn = sqlite3.connect(db_file)
 				cursor = conn.cursor()
 				for table in gc.database_header.keys():
-					columns = ', '.join([f"'{column}'" for column in gc.database_header[table]])
-					# Set 'Syntax' as the primary key
-					sql = f"CREATE TABLE {table} ({columns}, PRIMARY KEY(Syntax))"
+					columns = ', '.join([f"'{column}' TEXT" for column in gc.database_header[table]])
+					if table == 'user_data':
+						sql = f"CREATE TABLE {table} ({columns}, PRIMARY KEY(Syntax))"
+					else:
+						sql = f"CREATE TABLE {table} ({columns})"
 					cursor.execute(sql)
 				conn.commit()
 				self.__logger.file(f'Database {db_file} created with default tables.')
@@ -53,12 +51,11 @@ class SqliteDB:
 				cursor.execute(f"PRAGMA table_info({table})")
 				columns_in_db = [column[1] for column in cursor.fetchall()]
 				if set(columns_in_db) != set(gc.database_header[table]):
-					self.__logger.warning(f"Table {table} does not match the schema defined in gc.database_header.")
+					self.__logger.warning(f"Table {table} does not match the schema defined in gc.default_headers.")
 					conn.close()
 					exit(1)
 			conn.close()
 		self.__conn = sqlite3.connect(db_file)
-
 	# self.__syntax = self.syntax()
 
 	def add(self, data):
