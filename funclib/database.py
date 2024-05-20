@@ -258,7 +258,7 @@ class SqliteDB:
 
 		return True
 
-	def toggle_status(self, id):
+	def toggle_status(self, id,status = None):
 		"""
 		切换指定id的status状态
 		:param id: 要切换状态的数据行的id，或者'all'来切换所有用户的状态
@@ -281,14 +281,21 @@ class SqliteDB:
 			current_status = cursor.fetchone()[0]
 
 			# 切换status状态
-			if current_status.lower() == 'enabled':
-				new_status = 'disabled'
-			elif current_status.lower() == 'disabled':
-				new_status = 'enabled'
+			if status is None:
+				if current_status.lower() == 'enabled':
+					new_status = 'Disabled'
+				elif current_status.lower() == 'disabled':
+					new_status = 'Enabled'
+				else:
+					new_status = 'Enabled'
+					self.__logger.warning(f"Unknown status value '{current_status}' for user {id}, setting to 'enabled'")
+			elif status == 1:
+				new_status = 'Enabled'
+			elif status == 0:
+				new_status = 'Disabled'
 			else:
 				new_status = 'enabled'
-				self.__logger.warning(f"Unknown status value '{current_status}' for user {id}, setting to 'enabled'")
-
+				self.__logger.warning(f"Unknown status value '{status}' for user {id}, setting to 'enabled'")
 			# 更新数据库中的status状态
 			cursor.execute("UPDATE user_data SET status = ? WHERE uuid = ?", (new_status, uuid))
 			self.__logger.info(f"Data {id} updated in user_data, status set to {new_status}")

@@ -45,7 +45,6 @@ def print_table(data, log):
 	print(Fore.GREEN + str(table) + Style.RESET_ALL)
 
 
-
 def get_all_func_in_class(cls):
 	# 获取类的所有方法和属性
 	methods_and_attributes = dir(cls)
